@@ -1,5 +1,5 @@
 /*
-  STYLE GUIDE STYLING 
+  STYLE GUIDE STYLING
 */
 
 /*
@@ -8,10 +8,13 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600|PT+Sans:400,700|Roboto:400,500,700&display=swap');
 
 header{
-  background-color: #AAD922;
+  background-color: #aad922;
   padding: 2rem;
 }
 
+h3{
+  color: black;
+}
 body {
   background-color: white;
   font-family: 'Open Sans', sans-serif;
@@ -35,8 +38,10 @@ section{
 code{
   color: black;
 }
+
 p {
   margin-top: 1rem;
+  color: black;
 }
 
 nav a:hover, nav a:focus {
@@ -50,25 +55,36 @@ code {
   display: block;
 }
 
+.box {
+  display: inline-block;
+  font-weight: bold;
+  color: black;
+  padding:20px;
+  background-color: #aad922;
+  border: 2px solid #483519;
+  border-radius: 5px;
+}
 
-/* 
+
+/*
   INTERACTIVE ELEMENTS -------------------
 */
 
 /* Styling for the navigation button */
-.button-nav {
+.button-nav, .button-next {
   font-family: 'Roboto', sans-serif;
   display: inline-block;
   padding: 0.5rem;
   color: white;
   background-color: #483519;
   text-decoration: none;
-  transition-property: background-color; 
+  transition-property: background-color;
   transition-duration: 0.5s;
+  border-radius: 10px;
 }
 
-.button-nav:hover, .button-nav:focus {
-  background-color: rgb(200,200,200);
+.button-nav:hover, .button-nav:focus, .button-next:hover, .button-next:focus {
+  background-color: #5f4928;
 }
 
 nav ul {
@@ -77,6 +93,7 @@ nav ul {
   padding: 0;
   overflow: hidden;
   background-color: #483519;
+  border-radius: 10px;
 }
 
 nav li {
@@ -95,7 +112,98 @@ nav li a:hover {
   background-color: #111;
 }
 
-/* 
+.product_container {
+  font-weight: bold;
+  color: black;
+  padding:20px;
+  background-color: #aad922;
+  border: 2px solid #483519;
+  border-radius: 5px;
+  width: 80%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.product1 {
+  flex:1;
+  order:1;
+}
+
+.product2 {
+  flex:1;
+  order:2;
+}
+
+.product3 {
+  flex:1;
+  order:3;
+}
+
+/*Kaylie's Product Listing Css */
+
+.listing {
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.listing .productcard{
+  flex:1;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+max-width: 300px;
+margin: 1.5em;
+text-align: center;
+background-color: white;
+/* font-family: "gotham"; */
+}
+
+.price .productcard{
+  font-size: 22px;
+}
+
+.listing .productcard button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  /* background-color: rgb(124,185,232); */
+  /* brown color */
+  background-color: #483519;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.listing .productcard button:hover {
+  opacity: 0.9;
+	color: black;
+  /* lime green color */
+  background-color: #aad922;
+  /* background-color: rgb(255,255,161); */
+
+}
+
+@media (max-width: 75em) {
+  .row {
+    flex-direction: column;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+    padding-top:20px;
+  }
+}
+
+/* Kaylie stuff */
+
+/*
   TEXT ELEMENTS -------------------
 */
 
@@ -111,8 +219,27 @@ h1, h2, h3, h4 {
   color: black;
 }
 
+.text_field {
+  font-family: 'Open Sans', sans-serif;
+}
+.text_field:focus {
+  border-color: #483519;
+  border-radius: 5px;
+  background-color: #dee7c0;
+}
 
+.text_field:hover {
+  border-color: #483519;
+  border-radius: 5px;
+}
 
-/* 
+.radio_type {
+  border-radius: 30%;
+}
+
+a img:hover {
+  opacity: 80%;
+}
+/*
   COMBINED ELEMENTS -------------------
 */
