@@ -1,0 +1,118 @@
+/*
+  STYLE GUIDE STYLING 
+*/
+
+/*
+  Fonts
+*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600|PT+Sans:400,700|Roboto:400,500,700&display=swap');
+
+header{
+  background-color: #AAD922;
+  padding: 2rem;
+}
+
+body {
+  background-color: white;
+  font-family: 'Open Sans', sans-serif;
+  padding: 2rem;
+}
+
+section{
+  padding: 2rem;
+}
+
+.element {
+  background-color: #698F3F;
+  color: white;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: black;
+  border-bottom-width: 0.15rem;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+}
+code{
+  color: black;
+}
+p {
+  margin-top: 1rem;
+}
+
+nav a:hover, nav a:focus {
+  text-decoration: none;
+}
+
+code {
+  width: 30rem;
+  background-color: #EEE;
+  padding: 0.5rem;
+  display: block;
+}
+
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the navigation button */
+.button-nav {
+  font-family: 'Roboto', sans-serif;
+  display: inline-block;
+  padding: 0.5rem;
+  color: white;
+  background-color: #483519;
+  text-decoration: none;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+}
+
+.button-nav:hover, .button-nav:focus {
+  background-color: rgb(200,200,200);
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #483519;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #111;
+}
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+
+h1, h2, h3, h4 {
+  font-family: 'PT Sans', sans-serif;
+}
+
+.text_link {
+  color: #483519;
+}
+
+.text_link:hover {
+  color: black;
+}
+
+
+
+/* 
+  COMBINED ELEMENTS -------------------
+*/
