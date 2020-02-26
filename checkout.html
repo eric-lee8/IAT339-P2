@@ -1,21 +1,48 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
+    <head>
 
-    <meta charset="utf-8">
-    <title>IndianWok</title>
+        <meta charset="utf-8">
+        <title>IndianWok</title>
 
-    <link href="css/main.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
 
-</head>
+    </head>
 
-  <body>
+    <body>
+        
+        <header>
+            <h3>Check Out</h3>
+        </header>
 
-    <header>
-        <h3>Check Out</h3>
-    </header>
+        <section class="element">
+            <h3>Payment Form</h3>
+            <p>Please select your Payment Method:</p>
+              <input type="radio" name="PaymentType" value="Debit"> Debit<br>
+              <input type="radio" name="PaymentType" value="Credit"> Credit<br>
+              <input type="radio" name="PaymentType" value="Mastercard"> Mastercard<br>  
+    
+            <p>Please select your added Credit:</p>
+            <input type="radio" name="AddCredit" value="20"> $20<br>
+            <input type="radio" name="AddCredit" value="50"> $50<br>
+            <input type="radio" name="AddCredit" value="100"> $100<br>  
+            <br>
+            <input type="submit" value="Submit">
+          </section>
+    
+          <section class="element">
+            <h3>Checkout Cart</h3>
+            <h3>Your Cart:</h3>
+            <ol>
+              <li>Chilli Chicken: $10.50</li>
+              <li>Garlic Fish: $11.25</li>
+              <li>Large Rice: $5.50</li>
+            </ol>
+            <h4>Your Total Price: $27.25</h4>
+            <input type="submit" value="Check Out">
+          </section>
 
-  </body>
+    </body>
 
 </html>
