@@ -8,7 +8,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600|PT+Sans:400,700|Roboto:400,500,700&display=swap');
 
 header{
-  background-color: #aad922;
+  background-color: #DED2A8;
   padding: 2rem;
 }
 
@@ -21,12 +21,16 @@ body {
   padding: 2rem;
 }
 
+li{
+  color: black;
+}
+
 section{
   padding: 2rem;
 }
 
 .element {
-  background-color: #698F3F;
+  background-color: #DED2A9 ;
   color: white;
   border-top-width: 0.15rem;
   border-top-style: solid;
@@ -55,12 +59,12 @@ code {
   display: block;
 }
 
-.box {
+.paymentbox {
   display: inline-block;
   font-weight: bold;
   color: black;
   padding:20px;
-  background-color: #aad922;
+  background-color: #FFFFFF;
   border: 2px solid #483519;
   border-radius: 5px;
 }
@@ -84,32 +88,41 @@ code {
 }
 
 .button-nav:hover, .button-nav:focus, .button-next:hover, .button-next:focus {
-  background-color: #5f4928;
+  background-color: #699E3C;
 }
+
 
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #483519;
-  border-radius: 10px;
+  background-color: #FFFFFF;
+  /* navigation bar background colour */
+
+  /*Kaylie: Dont need border radius if the navigation is at the top, wont see anyways*/
+  /* border-radius: 10px; */
 }
 
-nav li {
+nav li{
   float: left;
+}
+
+.navigationbar nav li {
+  float: right;
 }
 
 nav li a {
   display: block;
-  color: white;
+  /* navigation a element */
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 nav li a:hover {
-  background-color: #111;
+  background-color: #699E3C;
 }
 
 .product_container {
@@ -191,6 +204,108 @@ background-color: white;
 
 }
 
+.billaddresscontent h3{
+  font-size: 1.3rem;
+  color: #699E3C;
+}
+
+.billaddresscontent h4{
+  font-size: 1.3rem;
+  color: #699E3C;
+}
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2em;
+}
+
+.col-25 {
+  flex: 25%;
+}
+
+.col-50 {
+  flex: 50%;
+
+}
+
+.col-75 {
+  flex: 75%;
+}
+
+.col-25, .col-50, .col-75 {
+  padding: 0 16px;
+}
+
+
+span.price {
+  float: right;
+  color: black;
+}
+
+.container {
+  background-color: #FFFFFF;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+
+  font-size: 24px;
+}
+
+.billaddresscontent{
+	color:black;
+
+}
+
+.btn {
+  background-color: #302718;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  /* opacity: 0.2; */
+  color:black;
+  background-color: #699E3C
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.checkoutprice {
+  float: right;
+  color: black;
+}
+
+/* if max width goes under 800px... */
 @media (max-width: 75em) {
   .row {
     flex-direction: column;
@@ -209,6 +324,7 @@ background-color: white;
 
 h1, h2, h3, h4 {
   font-family: 'PT Sans', sans-serif;
+  color: black;
 }
 
 .text_link {
