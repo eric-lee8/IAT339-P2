@@ -15,11 +15,10 @@
     <header>
       <h1>P01 - Style Guide Template</h1>
 
-      <p>A template you can use to start building out your own style guides with.</p>
-
+      <p>A template for my Restaurant "Indian Wok" Indian-Chinese Fusion Cusine.</p>
 
       <nav>
-        <ul>        
+        <ul>
           <li><a href="#interactive_elements">Interactive Elements</a></li>
           <li><a href="#text_elements">Text Elements</a></li>
           <li><a href="#combined_elements">Combined Elements</a></li>
@@ -28,7 +27,7 @@
           <li><a href="#citations">Citations</a></li>
       </nav>
 
-
+    </header>
 
     <!-- INTERACTIVE ELEMENTS SECTION // -->
     <section id="interactive_elements">
@@ -63,20 +62,23 @@
 
       <section class="element">
         <h3>Text Input Field with Label</h3>
-          <label>My text field: </label><input type="text">
+          <label>My text field: </label><input class="text_field" type="text">
       </section>
 
 
       <section class="element">
         <h3>Radio Button with Label</h3>
-        <label>My text field: </label><input type="radio">
+        <label>My radio field:
+          <input class="radio_type" type="radio" name="Option" value="Debit"> Option1<br>
+          <input class="radio_type" type="radio" name="Option" value="Credit"> Option2<br>
+          <input class="radio_type" type="radio" name="Option" value="Mastercard"> Option3<br>
       </section>
 
 
       <section class="element">
         <h3>Image as a Link</h3>
         <a href="#">
-          <img border="0" alt="IndianWok" src="images/Logo.PNG" width="200" height="100">
+          <img border="0" alt="IndianWok" src="images/Logo.png" width="200" height="100">
         </a>
       </section>
 
@@ -112,7 +114,7 @@
           <li>Item</li>
           <li>Item</li>
           <li>Item</li>
-        </ol> 
+        </ol>
       </section>
 
     </section>
@@ -138,46 +140,128 @@
 
       <section class="element">
         <h3>Product/Service Listing</h3>
-        <p>
-          <ul>
-            <li>Product Listing: Indian-Chinese Food</li>
-            <li><img border="0" alt="Food" src="images/Food.PNG" width="200" height="100"></li>
-            <li>Chilli Chicken: $10.50</li>
-          </ul>
-        </p>
+
+        <div class="product_container">
+
+          <div class="product1">
+            <h3>Spicy Eggplant and Green Beans</h3>
+            <img border="0" alt="Food" src="images/Food.png" width="300px" height=auto>
+            <p>
+              Price: $10.50
+              <ul>Ingredients:
+                <li>Eggplant</li>
+                <li>Green Beans</li>
+                <li>Onions</li>
+              </ul>
+            </p>
+          </div>
+
+          <div class="product2">
+            <h3>Masala Fish</h3>
+            <img border="0" alt="Food" src="images/Food1.png" width="300px" height=auto>
+            <p>
+              Price: $8.50
+              <ul>Ingredients:
+                <li>Fish</li>
+                <li>Carrots</li>
+                <li>Corriander</li>
+              </ul>
+            </p>
+          </div>
+
+          <div class="product3">
+            <h3>Gobi Manchurian</h3>
+            <img border="0" alt="Food" src="images/Food2.png" width="300px" height=auto>
+            <p>
+              Price: $11.50
+              <ul>Ingredients:
+                <li>Cauliflower</li>
+                <li>Grenn Onions</li>
+                <li>Carrots</li>
+              </ul>
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Kaylie's Stuff -->
+        <div class="listing">
+
+          <div class="productcard" id="listing1">
+          <!-- product number 2 -->
+          <img src="images/Food2.png" alt="Food" width="300" height="auto">
+
+          <h3>Gobi Manchurian</h3>
+          <p class="checkoutprice"> $11.50 </p>
+          <p> Cauliflower, Green Onions, Carrots </p>
+          <p><button>Add to Cart</button></p>
+          </div>
+
+            <div class="productcard" id="listing2">
+            <!-- product number 2 -->
+            <img src="images/Food1.png" alt="Food" width="300" height="auto">
+            <h3> Masala Fish </h3>
+            <p class="checkoutprice"> $8.50 </p>
+            <p> Fish, Carrots, Corriander </p>
+            <p><button>Add to Cart</button></p>
+            </div>
+
+            <div class="productcard" id="listing3">
+            <!-- product number 2 -->
+            <img src="images/Food.png" alt="Food" width="300" height="178">
+            <h3> Spicy Eggplant and Green Beans </h3>
+            <p class="checkoutprice"> $10.50 </p>
+            <p> Eggplant, Green Beans, Onions </p>
+            <p><button>Add to Cart</button></p>
+          </div>
+
+      </div>
+
       </section>
 
       <section class="element">
         <h3>Payment Form</h3>
-        <p>Please select your Payment Method:</p>
-          <input type="radio" name="PaymentType" value="Debit"> Debit<br>
-          <input type="radio" name="PaymentType" value="Credit"> Credit<br>
-          <input type="radio" name="PaymentType" value="Mastercard"> Mastercard<br>  
+        <div class="box">
 
-        <p>Please select your added Credit:</p>
-        <input type="radio" name="AddCredit" value="20"> $20<br>
-        <input type="radio" name="AddCredit" value="50"> $50<br>
-        <input type="radio" name="AddCredit" value="100"> $100<br>  
-        <br>
-        <input type="submit" value="Submit">
+          <p>Please select your Payment Method:</p>
+
+            <input class="radio_type" type="radio" name="PaymentType" value="Debit"> Debit<br>
+            <input class="radio_type" type="radio" name="PaymentType" value="Credit"> Credit<br>
+            <input class="radio_type" type="radio" name="PaymentType" value="Mastercard"> Mastercard<br>
+
+
+          <p>Please select your added Credit:</p>
+          <input type="radio" name="AddCredit" value="20"> $20<br>
+          <input type="radio" name="AddCredit" value="50"> $50<br>
+          <input type="radio" name="AddCredit" value="100"> $100<br>
+          <br>
+          <input class="button-next" type="submit" value="Submit">
+
+        </div>
       </section>
 
       <section class="element">
         <h3>Checkout Cart</h3>
-        <h3>Your Cart:</h3>
-        <ol>
-          <li>Chilli Chicken: $10.50</li>
-          <li>Garlic Fish: $11.25</li>
-          <li>Large Rice: $5.50</li>
-        </ol>
-        <h4>Your Total Price: $27.25</h4>
-        <input type="submit" value="Check Out">
+
+        <div class="box">
+
+          <h3>Your Cart:</h3>
+          <ol>
+            <li>Chilli Chicken: $10.50</li>
+            <li>Garlic Fish: $11.25</li>
+            <li>Large Rice: $5.50</li>
+          </ol>
+          <h4>Your Total Price: $27.25</h4>
+          <input class="button-next" type="submit" value="Check Out">
+
+        </div>
+
       </section>
 
     </section>
     <!-- // COMBINED ELEMENTS SECTION -->
 
-    <section>
+    <section class="element">
       <h3>Basic Branding Ideas:</h3>
       <ol>
         <li>The company sells Indian-Chinese Fusion food originated from India. Its basically Chinese food that were brought by few Chinese travellers from the main land but due to lack of spice which the Indians were used to tasting, Hence they added spices and cooked the Chinese cusine to give it an Indian twist to it.</li>
@@ -186,7 +270,7 @@
       </ol>
     </section>
 
-    <section>
+    <section class="element">
       <h3>Brand Components:</h3>
       <ol>
         <li>
@@ -197,35 +281,37 @@
           </ul>
         </li>
         <li>Color palettes:
-          <img border="0" alt="Color1" src="images/Color1.PNG" width="200rem" height=auto>
-          <img border="0" alt="Color2" src="images/Color2.PNG" width="200rem" height=auto>
-          <img border="0" alt="Color3" src="images/Color3.PNG" width="200rem" height=auto>
-          <img border="0" alt="Color4" src="images/Color4.PNG" width="200rem" height=auto>
-          <img border="0" alt="Color5" src="images/Color5.PNG" width="200rem" height=auto>
+          <img border="0" alt="Color1" src="images/Color1.png" width="200rem" height=auto>
+          <img border="0" alt="Color2" src="images/Color2.png" width="200rem" height=auto>
+          <img border="0" alt="Color3" src="images/Color3.png" width="200rem" height=auto>
+          <img border="0" alt="Color4" src="images/Color4.png" width="200rem" height=auto>
+          <img border="0" alt="Color5" src="images/Color5.png" width="200rem" height=auto>
         </li>
         <li>
           <ul>Images:
-          <li>Main Logo: <img border="0" alt="IndianWok" src="images/Logo.PNG" width="200" height="100"></li>
-          <li>Food 1 on Menu <img border="0" alt="IndianWok" src="images/Food.PNG" width="200" height="100"></li>
-          <li>Food 2 on Menu <img border="0" alt="IndianWok" src="images/Food1.PNG" width="200" height="100"></li>
-          <li>Food 3 on Menu <img border="0" alt="IndianWok" src="images/Food2.PNG" width="200" height="100"></li>
+          <li>Main Logo: <img border="0" alt="IndianWok" src="images/Logo.png" width="200" height="100"></li>
+          <li>Food 1 on Menu <img border="0" alt="IndianWok" src="images/Food.png" width="200" height="100"></li>
+          <li>Food 2 on Menu <img border="0" alt="IndianWok" src="images/Food1.png" width="200" height="100"></li>
+          <li>Food 3 on Menu <img border="0" alt="IndianWok" src="images/Food2.png" width="200" height="100"></li>
           </ul>
 
           <h3>Gallery:</h3>
-          <img border="0" alt="IndianWok" src="images/Food.PNG" width="600" height="auto">
-          <img border="0" alt="IndianWok" src="images/Food1.PNG" width="600" height="auto">
-          <img border="0" alt="IndianWok" src="images/Food2.PNG" width="600" height="auto">
+          <img border="0" alt="IndianWok" src="images/Food.png" width="600" height="auto">
+          <img border="0" alt="IndianWok" src="images/Food1.png" width="600" height="auto">
+          <img border="0" alt="IndianWok" src="images/Food2.png" width="600" height="auto">
 
         </li>
       </ol>
     </section>
 
-    <section id="citations">
+    <section id="citations" class="element">
       <h2>Citations</h2>
 
       <ul>
         <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a></li>
-        <li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#">URL</a>.</li>
+        <li>Robertson, Christian. Designer.  <strong>Roboto [Font]</strong>. Retrieved from <a href="https://fonts.google.com/specimen/Roboto">https://fonts.google.com/specimen/Roboto</a>.</li>
+        <li>ParaType. Designer. <strong>PT Sans [Font]</strong>. Retrieved from <a href="https://fonts.google.com/specimen/PT+Sans">https://fonts.google.com/specimen/PT+Sans</a>.</li>
+        <li>Indian Wok <strong>Food Items [images]</strong>. Retrieved from <a href="http://www.indianwok.ca/">http://www.indianwok.ca/</a>.</li>
       </ul>
 
     </section>
