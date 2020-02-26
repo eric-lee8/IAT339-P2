@@ -6,15 +6,16 @@
   Fonts
 */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600|PT+Sans:400,700|Roboto:400,500,700&display=swap');
-
+/*
 header{
   background-color: #DED2A8;
   padding: 2rem;
-}
+} */
 
 h3{
   color: black;
 }
+
 body {
   background-color: white;
   font-family: 'Open Sans', sans-serif;
@@ -39,6 +40,7 @@ section{
   border-bottom-style: solid;
   border-bottom-color: black;
 }
+
 code{
   color: black;
 }
@@ -91,13 +93,13 @@ code {
   background-color: #699E3C;
 }
 
-
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #FFFFFF;
+
   /* navigation bar background colour */
 
   /*Kaylie: Dont need border radius if the navigation is at the top, wont see anyways*/
@@ -105,12 +107,17 @@ nav ul {
 }
 
 nav li{
+  /* on style guide */
   float: left;
 }
 
 .navigationbar nav li {
   float: right;
 }
+
+/* .navigationbar nav li a:hover{
+  color:#699E3C;
+} */
 
 nav li a {
   display: block;
@@ -122,7 +129,12 @@ nav li a {
 }
 
 nav li a:hover {
-  background-color: #699E3C;
+  color: #699E3C;
+}
+/* home page navigation isnt responding to this code */
+
+.logo img{
+  
 }
 
 .product_container {
@@ -325,6 +337,11 @@ span.checkoutprice {
 h1, h2, h3, h4 {
   font-family: 'PT Sans', sans-serif;
   color: black;
+}
+
+h3{
+  display: inline-block;
+  text-align: center;
 }
 
 .text_link {
