@@ -9,14 +9,23 @@
 
 
 header{
+<<<<<<< HEAD
   /* background-color: #DED2A8; */
   padding: 2rem;
+=======
+  background-color: #DED2A8;
+  padding: 0rem;
+>>>>>>> Eric
 }
 
 h3{
   color: black;
   text-align:center;
+<<<<<<< HEAD
   margin-top: 4rem;
+=======
+  margin-top:4rem;
+>>>>>>> Eric
 }
 
 body {
@@ -63,6 +72,24 @@ code{
   color: black;
 }
 
+<<<<<<< HEAD
+=======
+.textbox_home{
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.7rem;
+}
+
+.homepagecontent_top {
+  max-height:5rem;
+  max-width: 45rem;
+  margin:0;
+
+  color: black;
+}
+>>>>>>> Eric
 
 nav a:hover, nav a:focus {
   text-decoration: none;
@@ -85,6 +112,75 @@ code {
   border-radius: 5px;
 }
 
+/* 
+New Nav
+*/
+
+nav ul{
+  list-style: none;
+  padding:0;
+  background: #444;
+}
+
+nav ul li a{
+  color:#ddd;
+  text-decoration: none;
+  padding: .8rem 1rem;
+  display: block;
+  line-height: 1;
+}
+
+nav ul li{
+  border-bottom: 5px solid #699e3c;
+}
+
+nav div:first-child{
+  background: rgb(255, 255, 255);
+  line-height: 0;
+  padding: .8rem 0rem;
+  text-align: center;
+}
+
+
+nav div:first-child, nav ul{
+  margin:0;
+}
+
+@media only screen and (min-width: 30em){
+  nav{
+      display:flex;
+      justify-content: space-between;
+      background:rgb(255, 255, 255);
+      align-items: center;
+  }
+
+  nav ul{
+      display:flex;
+      align-items: center;
+      background:none;
+  }
+
+  nav di:first-child h1{
+      padding:0;
+      margin-left: 1rem;
+  }
+
+  nav div:first-child img{
+      height:40px;
+  }
+  nav ul li{
+      border-bottom: none;
+      flex: 1 0 auto;
+  }
+  nav ul li a{
+      padding:1.2rem 1rem;
+  }
+
+  nav ul li a:hover{
+      background: red;
+  }
+
+}
 
 /*
   INTERACTIVE ELEMENTS -------------------
@@ -112,6 +208,9 @@ nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  float: right;
+  width: 70%;
+  text-align: center;
   overflow: hidden;
   background-color: #FFFFFF;
   /* navigation bar background colour */
