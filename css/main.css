@@ -87,6 +87,24 @@ code {
   border-radius: 5px;
 }
 
+.homeimg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.location_image img{
+  float: left;
+  width: 50%;
+  }
+  
+  .location_info_div h4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
 /* 
 New Nav
 */
