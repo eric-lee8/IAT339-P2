@@ -1,0 +1,571 @@
+/*
+  STYLE GUIDE STYLING
+*/
+
+/*
+  Fonts
+*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600|PT+Sans:400,700|Roboto:400,500,700&display=swap');
+
+header{
+  background-color: #DED2A8;
+  padding: 0rem;
+}
+
+h3{
+  color: black;
+  text-align:center;
+  margin-top:4rem;
+}
+body {
+  background-color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+li{
+  color: black;
+}
+
+section{
+  padding: 2rem;
+}
+
+.element {
+  background-color: #DED2A9 ;
+  color: white;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: black;
+  border-bottom-width: 0.15rem;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+}
+code{
+  color: black;
+}
+
+p {
+  margin-top: 1rem;
+  color: black;
+}
+
+.textbox_home{
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.7rem;
+}
+
+.homepagecontent_top {
+  max-height:5rem;
+  max-width: 45rem;
+  margin:0;
+
+  color: black;
+}
+
+nav a:hover, nav a:focus {
+  text-decoration: none;
+}
+
+code {
+  width: 30rem;
+  background-color: #EEE;
+  padding: 0.5rem;
+  display: block;
+}
+
+.paymentbox {
+  display: inline-block;
+  font-weight: bold;
+  color: black;
+  padding:20px;
+  background-color: #FFFFFF;
+  border: 2px solid #483519;
+  border-radius: 5px;
+}
+
+.homeimg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.location_image img{
+  float: left;
+  width: 50%;
+  }
+  
+  .location_info_div h4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+/* 
+New Nav
+*/
+
+nav ul{
+  list-style: none;
+  padding:0;
+  background: #444;
+}
+
+nav ul li a{
+  color:#ddd;
+  text-decoration: none;
+  padding: .8rem 1rem;
+  display: block;
+  line-height: 1;
+}
+
+nav ul li{
+  border-bottom: 5px solid #699e3c;
+}
+
+nav div:first-child{
+  background: rgb(255, 255, 255);
+  line-height: 0;
+  padding: .8rem 0rem;
+  text-align: center;
+}
+
+
+nav div:first-child, nav ul{
+  margin:0;
+}
+
+@media only screen and (min-width: 30em){
+  nav{
+      display:flex;
+      justify-content: space-between;
+      background:rgb(255, 255, 255);
+      align-items: center;
+  }
+
+  nav ul{
+      display:flex;
+      align-items: center;
+      background:none;
+  }
+
+  nav di:first-child h1{
+      padding:0;
+      margin-left: 1rem;
+  }
+
+  nav div:first-child img{
+      height:40px;
+  }
+  nav ul li{
+      border-bottom: none;
+      flex: 1 0 auto;
+  }
+  nav ul li a{
+      padding:1.2rem 1rem;
+  }
+
+  nav ul li a:hover{
+      background: #483519;
+  }
+
+}
+
+/*
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the navigation button */
+.button-nav, .button-next {
+  font-family: 'Roboto', sans-serif;
+  display: inline-block;
+  padding: 0.5rem;
+  color: white;
+  background-color: #483519;
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  border-radius: 10px;
+}
+
+.button-nav:hover, .button-nav:focus, .button-next:hover, .button-next:focus {
+  background-color: #699E3C;
+}
+
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+  width: 70%;
+  text-align: center;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  /* navigation bar background colour */
+
+  /*Kaylie: Dont need border radius if the navigation is at the top, wont see anyways*/
+  /* border-radius: 10px; */
+}
+
+nav li{
+  float: left;
+}
+
+.navigationbar nav li {
+  float: right;
+}
+
+nav li a {
+  display: block;
+  /* navigation a element */
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #699E3C;
+}
+
+.product_container {
+  font-weight: bold;
+  color: black;
+  padding:20px;
+  background-color: #aad922;
+  border: 2px solid #483519;
+  border-radius: 5px;
+  width: 80%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.product1 {
+  flex:1;
+  order:1;
+}
+
+.product2 {
+  flex:1;
+  order:2;
+}
+
+.product3 {
+  flex:1;
+  order:3;
+}
+
+/*Kaylie's Product Listing Css */
+
+.listing {
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.listing .productcard{
+  flex:1;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+max-width: 300px;
+margin: 1.5em;
+text-align: center;
+background-color: white;
+/* font-family: "gotham"; */
+}
+
+.price .productcard{
+  font-size: 22px;
+}
+
+.listing .productcard button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  /* background-color: rgb(124,185,232); */
+  /* brown color */
+  background-color: #483519;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.listing .productcard button:hover {
+  opacity: 0.9;
+	color: black;
+  /* lime green color */
+  background-color: #aad922;
+  /* background-color: rgb(255,255,161); */
+
+}
+
+.billaddresscontent h3{
+  font-size: 1.3rem;
+  color: #699E3C;
+}
+
+.billaddresscontent h4{
+  font-size: 1.3rem;
+  color: #699E3C;
+}
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2em;
+}
+
+.col-25 {
+  flex: 25%;
+}
+
+.col-50 {
+  flex: 50%;
+
+}
+
+.col-75 {
+  flex: 75%;
+}
+
+.col-25, .col-50, .col-75 {
+  padding: 0 16px;
+}
+
+
+span.price {
+  float: right;
+  color: black;
+}
+
+.container {
+  background-color: #FFFFFF;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+
+  font-size: 24px;
+}
+
+.billaddresscontent{
+	color:black;
+
+}
+
+.btn {
+  background-color: #302718;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  /* opacity: 0.2; */
+  color:black;
+  background-color: #699E3C
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.checkoutprice {
+  float: right;
+  color: black;
+}
+
+/* if max width goes under 800px... */
+@media (max-width: 75em) {
+  .row {
+    flex-direction: column;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+    padding-top:20px;
+  }
+}
+
+/* Kaylie stuff */
+
+/*
+  TEXT ELEMENTS -------------------
+*/
+
+h1, h2, h3, h4 {
+  font-family: 'PT Sans', sans-serif;
+  color: black;
+}
+
+.text_link {
+  color: #483519;
+}
+
+.text_link:hover {
+  color: black;
+}
+
+.text_field {
+  font-family: 'Open Sans', sans-serif;
+}
+.text_field:focus {
+  border-color: #483519;
+  border-radius: 5px;
+  background-color: #dee7c0;
+}
+
+.text_field:hover {
+  border-color: #483519;
+  border-radius: 5px;
+}
+
+.radio_type {
+  border-radius: 30%;
+}
+
+a img:hover {
+  opacity: 80%;
+}
+
+/*Carousel*/
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/*
+  COMBINED ELEMENTS -------------------
+*/
+
+textarea {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
