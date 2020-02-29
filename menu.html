@@ -40,8 +40,40 @@
                   <h3>Gobi Manchurian</h3>
                   <p class="checkoutprice"> $11.50 </p>
                   <p> Cauliflower, Green Onions, Carrots </p>
-                  <p><button>Add to Cart</button></p>
+      
+                  <p><button onclick="openWindow()">Details</button></p>
                   </div>
+                  <SCRIPT language="JavaScript"> 
+
+                    var w = 480, h = 340;
+                    
+                    
+                    function openWindow(){
+                    if (document.getElementById) {
+                       w = screen.availWidth;
+                       h = screen.availHeight;
+                    }  
+                    
+                    var popW = 800, popH = 700;
+                    
+                    var leftPos = (w-popW)/2;
+                    var topPos = (h-popH)/2;
+                    
+                    
+                    
+                    msgWindow = window.open('','popup','width=' + popW + ',height=' + popH + 
+                                             ',top=' + topPos + ',left=' + leftPos + ',       scrollbars=yes');
+                    
+                    msgWindow.document.write 
+                        ('<HTML><HEAD><TITLE>Centered Window</TITLE></HEAD><BODY><FORM    NAME="form1">' +
+                        '<img src="images/Logo.PNG">'+
+                        ' <H1>Food: Gobi Manchurian</H1>'+
+                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' +
+                        ' Click the button below to close the window.<br />' +
+                        '<INPUT TYPE="button" VALUE="OK"onClick="window.close();"></FORM></BODY>   </HTML>');
+                    }
+                    
+                    </script>
       
                     <div class="productcard" id="listing2">
                     <!-- product number 2 -->
@@ -49,7 +81,7 @@
                     <h3> Masala Fish </h3>
                     <p class="checkoutprice"> $8.50 </p>
                     <p> Fish, Carrots, Corriander </p>
-                    <p><button>Add to Cart</button></p>
+                    <p><button onclick="openWindow()">Details</button></p>
                     </div>
       
                     <div class="productcard" id="listing3">
@@ -58,7 +90,7 @@
                     <h3> Spicy Eggplant and Green Beans </h3>
                     <p class="checkoutprice"> $10.50 </p>
                     <p> Eggplant, Green Beans, Onions </p>
-                    <p><button>Add to Cart</button></p>
+                    <p><button onclick="openWindow()">Details</button></p>
                   </div>
       
               </div>
