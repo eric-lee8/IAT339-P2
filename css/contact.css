@@ -1,42 +1,16 @@
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #FFFFFF;
-}
+.location_image img{
+    float: left;
+    width: 50%;
+    }
+    
+    .location_info_div h4{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-nav li{
-  float: left;
-}
-
-.navigationbar nav li {
-  float: right;
-}
-
-nav li a {
-  display: block;
-  /* navigation a element */
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-nav li a:hover {
-  color: #699E3C;
-}
-
-.flex-container{
-   display: inline-block;
-   vertical-align: top;
-   padding: 0 0 0 5px;
-   -moz-box-sizing: border-box;
-   -webkit-box-sizing: border-box;
-   box-sizing: border-box;
-}
-
-.flex-container p{
-    padding: 0;
-    margin: 0 0 10px;
-}
+    textarea {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
