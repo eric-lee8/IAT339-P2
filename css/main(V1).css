@@ -1,8 +1,11 @@
 /*
+  STYLE GUIDE STYLING
+*/
+
+/*
   Fonts
 */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600|PT+Sans:400,700|Roboto:400,500,700&display=swap');
-
 
 header{
   background-color: #DED2A8;
@@ -12,27 +15,20 @@ header{
 h3{
   color: black;
   text-align:center;
-<<<<<<< HEAD
-  margin-top: 4rem;
-=======
   margin-top:4rem;
->>>>>>> Eric
 }
-
 body {
   background-color: white;
   font-family: 'Open Sans', sans-serif;
-  padding: 2rem;
 }
 
-  body {
-    background-color: white;
-    font-family: 'Open Sans', sans-serif;
-  }
+li{
+  color: black;
+}
 
-  section{
-    padding: 2rem;
-  }
+section{
+  padding: 2rem;
+}
 
 .element {
   background-color: #DED2A9 ;
@@ -48,6 +44,11 @@ code{
   color: black;
 }
 
+p {
+  margin-top: 1rem;
+  color: black;
+}
+
 .textbox_home{
   height: 7rem;
   display: flex;
@@ -63,25 +64,6 @@ code{
 
   color: black;
 }
-
-<<<<<<< HEAD
-=======
-.textbox_home{
-  height: 7rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 1.7rem;
-}
-
-.homepagecontent_top {
-  max-height:5rem;
-  max-width: 45rem;
-  margin:0;
-
-  color: black;
-}
->>>>>>> Eric
 
 nav a:hover, nav a:focus {
   text-decoration: none;
@@ -104,8 +86,26 @@ code {
   border-radius: 5px;
 }
 
+.homeimg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.location_image img{
+  float: left;
+  width: 50%;
+  }
+  
+  .location_info_div h4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
 /* 
-Nav Bar
+New Nav
 */
 
 nav ul{
@@ -150,15 +150,6 @@ nav div:first-child, nav ul{
       display:flex;
       align-items: center;
       background:none;
-
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      float: right;
-      width: 70%;
-      text-align: center;
-      overflow: hidden;
-      background-color: #FFFFFF;
   }
 
   nav di:first-child h1{
@@ -238,7 +229,7 @@ nav li a {
 }
 
 nav li a:hover {
-  color: #699E3C;
+  background-color: #699E3C;
 }
 
 .product_container {
@@ -315,7 +306,7 @@ background-color: white;
   opacity: 0.9;
 	color: black;
   /* lime green color */
-  background-color: #669E3C;
+  background-color: #aad922;
   /* background-color: rgb(255,255,161); */
 
 }
@@ -443,17 +434,138 @@ h1, h2, h3, h4 {
   color: black;
 }
 
-h3{
+.text_link {
+  color: #483519;
+}
+
+.text_link:hover {
   color: black;
-  text-align:center;
-  margin-top:4rem;
+}
+
+.text_field {
+  font-family: 'Open Sans', sans-serif;
+}
+.text_field:focus {
+  border-color: #483519;
+  border-radius: 5px;
+  background-color: #dee7c0;
+}
+
+.text_field:hover {
+  border-color: #483519;
+  border-radius: 5px;
+}
+
+.radio_type {
+  border-radius: 30%;
 }
 
 a img:hover {
   opacity: 80%;
 }
 
-p {
-  margin-top: 1rem;
-  color: black;
+/*Carousel*/
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/*
+  COMBINED ELEMENTS -------------------
+*/
+
+textarea {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
