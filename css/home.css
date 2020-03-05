@@ -34,6 +34,10 @@ h3{
   margin-top: 4rem;
 }
 
+.space{
+  margin: 2rem;
+}
+
 .textbox_home{
     height: 7rem;
     display: flex;
