@@ -22,6 +22,7 @@ var w = 480, h = 340;
       '<img src="images/Logo.PNG">'+
       ' <H1>Food: Gobi Manchurian</H1>'+
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' +
-      ' Click the button below to close the window.<br />' +
+      '<h3>Tell us how was your experience with this dish:</h3>' +
+      '<textarea id="w3mission" rows="4" cols="80"></textarea>' + '<br>' +
       '<INPUT TYPE="button" VALUE="OK"onClick="window.close();"></FORM></BODY>   </HTML>');
   }
