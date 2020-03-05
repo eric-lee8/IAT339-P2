@@ -4,3 +4,38 @@
     margin-right: auto;
     width: 50%;
   }
+
+.contact{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact .locationcard{
+ flex:1;
+ max-width: 30em;
+ margin: 1.5em;
+ text-align: left;
+}
+
+.contact .imagecard{
+
+}
+
+.textbox_aboutus{
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.7rem;
+  }
+
+  .aboutusinfo{
+    /* max-height:5rem; */
+    max-width: 45rem;
+    margin:0;
+
+    color: black;
+  }
