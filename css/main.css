@@ -129,3 +129,8 @@ h3{
 a img:hover {
   opacity: 80%;
 }
+
+p {
+  margin-top: 1rem;
+  color: black;
+}
