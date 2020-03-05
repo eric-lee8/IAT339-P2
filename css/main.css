@@ -37,21 +37,24 @@ Nav Bar
 */
 
 nav ul{
-  list-style: none;
-  padding:0;
-  background: #444;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #FFFFFF;
 }
 
 nav ul li a{
-  color:#ddd;
-  text-decoration: none;
-  padding: .8rem 1rem;
   display: block;
-  line-height: 1;
+  /* navigation a element */
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 nav ul li{
-  border-bottom: 5px solid #699e3c;
+  float: right;
 }
 
 nav div:first-child{
@@ -64,6 +67,10 @@ nav div:first-child{
 
 nav div:first-child, nav ul{
   margin:0;
+}
+
+nav ul li a:hover{
+  color: #699E3C;
 }
 
 @media only screen and (min-width: 30em){
@@ -105,9 +112,7 @@ nav div:first-child, nav ul{
       padding:1.2rem 1rem;
   }
 
-  nav ul li a:hover{
-      background: #483519;
-  }
+  
 
 }
 

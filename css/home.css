@@ -14,6 +14,129 @@
     color: black;
   }
 
+  .homelisting {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+      
+  
+  }
+  
+  .homelisting .foodcard{
+    flex:1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: 1.5em;
+  text-align: center;
+  background-color: white;
+  /* font-family: "gotham"; */
+  }
+  
+  .popularitems{
+    background-color: #DED2A8;
+    padding: 2px;
+  
+  }
+
+  a.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .homelisting  a.button{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: right;
+    justify-content: right;
+  }
+  
+  a.button {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 2px solid #699E3C;
+    border-radius: 8px;
+  
+  }
+  
+  a.button:hover {
+    background-color: #699E3C;
+    color: white;
+  }
+  
+  
+  .reviewitems{
+    /* background-color: #DED2A8 */
+  }
+  
+  .reviewlisting {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .reviewcard{
+    height:7rem;
+    padding-top:0;
+    padding-left:0.3rem;
+    padding-right: 0.3rem;
+  }
+  
+  .reviewlisting .reviewcard{
+  flex:1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  
+  margin: 1.5em;
+  text-align: left;
+  background-color: white;
+  }
+  
+  a.reviewbutton {
+   background-color: #4CAF50; /* Green */
+   border: none;
+   color: white;
+   padding: 16px 32px;
+   text-align: center;
+   text-decoration: none;
+   font-size: 16px;
+   margin: 4px 2px;
+   transition-duration: 0.4s;
+   cursor: pointer;
+  }
+  
+  .reviewlisting  a.button{
+   display:flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   align-items: right;
+   justify-content: right;
+  }
+  
+  a .reviewbutton {
+   background-color: #FFFFFF;
+   color: black;
+   border: 2px solid #699E3C;
+   border-radius: 8px;
+  
+  }
+  
+  a.reviewbutton:hover {
+   background-color: #699E3C;
+   color: white;
+  }
   /*Carousel*/
 
 * {box-sizing:border-box}
