@@ -5,6 +5,14 @@
     width: 50%;
   }
 
+  img{
+    border:0;
+  }
+
+.logonav{
+  width: 20%;
+}
+
 .contact{
   display:flex;
   flex-wrap: wrap;
