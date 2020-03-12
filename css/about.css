@@ -24,6 +24,12 @@
 
 }
 
+@media(max-width:60em){
+  .contact{
+    flex-flow:column wrap;
+  }
+}
+
 .textbox_aboutus{
     height: 7rem;
     display: flex;
