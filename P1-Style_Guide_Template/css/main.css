@@ -112,6 +112,7 @@ nav li{
   float: right;
 }
 
+
 nav li a {
   display: block;
   /* navigation a element */
@@ -122,7 +123,7 @@ nav li a {
 }
 
 nav li a:hover {
-  background-color: #699E3C;
+  color: #699E3C;
 }
 
 .product_container {
