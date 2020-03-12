@@ -1,6 +1,5 @@
 h1{
   text-align:center;
-  margin-top:4rem;
 }
 
 .item-list button {
@@ -19,6 +18,18 @@ h1{
   opacity: 0.9;
     color: black;
   background-color: #aad922;
+}
+
+.TopFood {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.TopFood img {
+  border: 1px solid #626262;
 }
 
 .list-container {
@@ -48,7 +59,7 @@ background-color: #FFFFFF;
 color:black;
 border: 1px solid #626262;
 margin: 3px;
-padding: 10px 0 0 10px;
+padding: 5px 0 0 5px;
 
 width: 100%;
 }
@@ -59,7 +70,7 @@ justify-content: space-around;
 align-content: space-around;
 align-items: center;
 width: 100%;
-padding: 4px;
+padding: 2px;
 }
 
 span {
