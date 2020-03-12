@@ -1,23 +1,23 @@
 var w = 480, h = 340;
-                    
-                    
+
+
   function openWindow1(){
   if (document.getElementById) {
       w = screen.availWidth;
       h = screen.availHeight;
-  }  
-  
+  }
+
   var popW = 800, popH = 700;
-  
+
   var leftPos = (w-popW)/2;
   var topPos = (h-popH)/2;
-  
-  
-  
-  msgWindow = window.open('','popup','width=' + popW + ',height=' + popH + 
+
+
+
+  msgWindow = window.open('','popup','width=' + popW + ',height=' + popH +
                             ',top=' + topPos + ',left=' + leftPos + ',       scrollbars=yes');
-  
-  msgWindow.document.write 
+
+  msgWindow.document.write
       ('<HTML><HEAD>'+
       '<style>header{background-color: #DED2A8;padding: 0rem;}' +
         'body {background-color:white;font-family: \'Open Sans\', sans-serif;padding: 2rem;}' +
@@ -25,7 +25,7 @@ var w = 480, h = 340;
         '#reviewtext{margin-left: auto;margin-right: auto;}' +
         '</style>'+
       '<TITLE>Centered Window</TITLE></HEAD><BODY><FORM    NAME="form1">' +
-      '<img src="images/dumplings1.PNG" height=20%><img src="images/dumplings2.PNG" height=20%><img src="images/dumplings3.PNG" height=20%>'+
+      '<img src="images/dumplings1.png" height=20%><img src="images/dumplings2.png" height=20%><img src="images/dumplings3.png" height=20%>'+
       '<section> <H1>Food: Chicken Dumplings</H1>'+
       'Flour coating with Chicken and vegtable fillings cooked in our special house made spicy sauce.' +
       '<br>' +
@@ -41,18 +41,18 @@ var w = 480, h = 340;
     if (document.getElementById) {
         w = screen.availWidth;
         h = screen.availHeight;
-    }  
-    
+    }
+
     var popW = 800, popH = 700;
-    
+
     var leftPos = (w-popW)/2;
     var topPos = (h-popH)/2;
-    
-    
-    
+
+
+
     msgWindow = window.open('','popup','width=' + popW + ',height=' + popH + ',top=' + topPos + ',left=' + leftPos + ', scrollbars=yes');
 
-        msgWindow.document.write 
+        msgWindow.document.write
         ('<HTML><HEAD>'+
         '<style>header{background-color: #DED2A8;padding: 0rem;}' +
         'body {background-color:white;font-family: \'Open Sans\', sans-serif;padding: 2rem;}' +
@@ -60,7 +60,7 @@ var w = 480, h = 340;
         '#reviewtext{margin-left: auto;margin-right: auto;}' +
         '</style>'+
         '<TITLE>Centered Window</TITLE></HEAD><BODY><FORM    NAME="form1">' +
-        '<img src="images/rolls1.PNG" height=30%><img src="images/rolls2.PNG" height=30%><img src="images/rolls3.PNG" height=30%>'+
+        '<img src="images/rolls1.png" height=30%><img src="images/rolls2.png" height=30%><img src="images/rolls3.png" height=30%>'+
         '<section> <H1>Food: Vegtable Spring Rolls</H1>'+
         'Deep Fried bread coating with mix vegtable fillings.' +
         '<br>' +
@@ -71,4 +71,3 @@ var w = 480, h = 340;
                               '<textarea id="reviewtext" rows="4" cols="80"></textarea>' + '<br>' +
                               '<INPUT TYPE="button" VALUE="OK"onClick="window.close();"></section></FORM></BODY>   </HTML>');
                           }
-    
