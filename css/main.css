@@ -18,6 +18,11 @@
     min-width: 20rem;
   }
 
+  img{
+    border:0;
+    width: 20%;
+  }
+
   section{
     padding: 2rem;
   }
@@ -32,8 +37,8 @@
     border-bottom-style: solid;
     border-bottom-color: black;
   }
-  
-/* 
+
+/*
 Nav Bar
 */
 
@@ -113,7 +118,7 @@ nav ul li a:hover{
       padding:1.2rem 1rem;
   }
 
-  
+
 
 }
 

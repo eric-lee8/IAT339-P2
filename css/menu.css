@@ -20,6 +20,10 @@ h1{
   background-color: #aad922;
 }
 
+.foods{
+  width:20%;
+}
+
 .TopFood {
   display: flex;
   flex-direction: row;
