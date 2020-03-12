@@ -1,6 +1,5 @@
 h1{
   text-align:center;
-  margin-top:4rem;
 }
 
 .item-list button {
@@ -60,7 +59,7 @@ background-color: #FFFFFF;
 color:black;
 border: 1px solid #626262;
 margin: 3px;
-padding: 10px 0 0 10px;
+padding: 5px 0 0 5px;
 
 width: 100%;
 }
@@ -71,7 +70,7 @@ justify-content: space-around;
 align-content: space-around;
 align-items: center;
 width: 100%;
-padding: 4px;
+padding: 2px;
 }
 
 span {
