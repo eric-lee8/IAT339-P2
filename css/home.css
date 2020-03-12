@@ -27,6 +27,26 @@ nav li a:hover {
   color: #699E3C;
 }
 
+.img{
+  border:0;
+}
+
+.logonav{
+  width:20%;
+}
+
+.food{
+  width:100%;
+}
+
+.text{
+  color: black;
+}
+
+.foodlisted{
+  width:300px;
+  height:auto;
+}
 
 h3{
 
